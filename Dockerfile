@@ -25,7 +25,6 @@ RUN sudo chown -R coder:coder /home/coder/.local
 RUN sudo curl -fsSL https://deb.nodesource.com/setup_15.x | sudo bash -
 RUN sudo apt-get install -y nodejs
 RUN sudo npm install -g npm
-RUN sudo add-apt-repository ppa:chris-lea/node.js
 RUN sudo apt-get update
 RUN sudo apt-get install nodejs npm
 
