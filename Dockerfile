@@ -27,6 +27,7 @@ RUN sudo apt-get install -y nodejs
 RUN sudo npm install -g npm
 RUN sudo apt-get update
 # RUN sudo apt-get install nodejs npm
+RUN npm install -g npm@next
 
 # Install a VS Code extension:
 # Note: we use a different marketplace than VS Code. See https://github.com/cdr/code-server/blob/main/docs/FAQ.md#differences-compared-to-vs-code
