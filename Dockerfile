@@ -26,6 +26,10 @@ RUN sudo curl -fsSL https://deb.nodesource.com/setup_15.x | sudo bash -
 RUN sudo apt-get install -y nodejs
 RUN sudo npm install -g npm
 RUN sudo apt-get install python3 python3-pip
+RUN sudo add-apt-repository ppa:chris-lea/node.js
+RUN sudo apt-get update
+RUN sudo apt-get install nodejs npm
+
 # Install a VS Code extension:
 # Note: we use a different marketplace than VS Code. See https://github.com/cdr/code-server/blob/main/docs/FAQ.md#differences-compared-to-vs-code
 RUN code-server --install-extension esbenp.prettier-vscode
