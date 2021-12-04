@@ -28,6 +28,7 @@ RUN sudo npm install -g npm
 RUN sudo apt-get update
 RUN sudo apt install -y python3-pip
 RUN sudo apt update
+RUN sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | sudo bash
 
 # RUN sudo apt-get install nodejs npm
 
