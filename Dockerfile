@@ -24,7 +24,7 @@ RUN sudo chown -R coder:coder /home/coder/.local
 # Install NodeJS
 # RUN sudo curl -fsSL https://deb.nodesource.com/setup_15.x | sudo bash -
 # RUN sudo apt-get install -y nodejs
-RUN sudo npm install -g npm
+# RUN sudo npm install -g npm
 RUN sudo apt-get update
 RUN sudo apt install -y python3-pip
 RUN sudo apt update
