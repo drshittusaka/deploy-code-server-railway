@@ -27,6 +27,7 @@ RUN sudo apt-get install -y nodejs
 RUN sudo npm install -g npm
 RUN sudo apt-get update
 RUN sudo apt install -y python3-pip
+RUN sudo apt update
 
 # RUN sudo apt-get install nodejs npm
 
