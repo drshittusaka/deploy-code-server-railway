@@ -22,15 +22,15 @@ RUN sudo chown -R coder:coder /home/coder/.local
 # You can add custom software and dependencies for your environment below
 # -----------
 # Install NodeJS
-# RUN sudo curl -fsSL https://deb.nodesource.com/setup_15.x | sudo bash -
-# RUN sudo apt-get install -y nodejs
-# RUN sudo npm install -g npm
+RUN sudo curl -fsSL https://deb.nodesource.com/setup_15.x | sudo bash -
+RUN sudo apt-get install -y nodejs
+RUN sudo npm install -g npm
 RUN sudo apt-get update
 RUN sudo apt install -y python3-pip
-RUN sudo apt update
-RUN sudo curl https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | sudo bash
-RUN sudo nvm install -y node
-RUN sudo npm install -g npm 
+# RUN sudo apt update
+# RUN sudo curl https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | sudo bash
+# RUN sudo nvm install -y node
+# RUN sudo npm install -g npm 
 
 # RUN sudo apt-get install nodejs npm
 
